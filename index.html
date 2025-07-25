@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>k</title> <!-- Начальная буква -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Заставка -->
+<div id="intro-screen">
+  <div id="intro-text">click to enter...</div>
+</div>
+
+<canvas id="stars"></canvas>
+
+<main class="card" aria-hidden="true">
+  <h1 class="nickname" id="nick">krakodilla</h1> <!-- ник -->
+  <p class="desc">Мопс Family | Web Dev | TG Bots | OSINT</p> <!-- описание -->
+
+  <div class="row">
+    <div class="block">
+      <h3>Друзья</h3> <!-- все юзы меняйте сами -->
+      <ul>
+        <li>@wedIines</li>
+        <li>@trueosints</li>
+        <li>@ownezc</li>
+        <li>@allumenator</li>
+        <li>@Chevxuevv</li>
+        <li>@nemeroff_terract</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Навыки</h3> <!-- навыки тоже -->
+      <ul>
+        <li>Осинт</li>
+        <li>Кодинг</li>
+        <li>TG Боты</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="btns"> <!-- ваш телеграм -->
+    <a href="https://t.me/durovpashadurov"  target="_blank" class="btn tg-btn" rel="noopener noreferrer" aria-label="Перейти в Telegram">
+      Telegram 
+      <span class="btn-wave"></span>
+    </a>     <!-- ваш проект -->
+    <a href="https://t.me/mopscorporation" target="_blank" class="btn prj-btn" rel="noopener noreferrer" aria-label="Перейти к проекту">
+      Project 
+      <span class="btn-wave"></span>
+    </a>
+  </div>
+
+  <!-- Встроенный плеер -->
+  <div class="music-control" id="music-control" aria-label="Музыкальный плеер">
+    <div class="track-info" id="track-info">⠀⠀⠀⠀⠀On tha linë</div> <!-- название трека -->
+    <button id="btn-play-pause" class="btn-player" aria-label="Play/Pause" title="Play/Pause">
+      <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#00fff7" viewBox="0 0 24 24" >
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#00fff7" viewBox="0 0 24 24" style="display:none;">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+    </button>
+  </div>
+</main>
+
+<audio id="background-music" loop>
+  <source src="media\2.mp3" type="audio/mpeg" /> <!-- трек -->
+</audio>
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="media\1.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
